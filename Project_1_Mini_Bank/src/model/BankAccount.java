@@ -1,5 +1,6 @@
+package model;
 
-public class bankAccount {
+public class BankAccount {
 
     private int id; //AI
     private String ownerName;
@@ -9,11 +10,11 @@ public class bankAccount {
     private String currency; // $ , &
 
     //  Door1
-    public bankAccount(int id, String ownerName, double amount, String type, String status, String currency) {
+    public BankAccount(int id, String ownerName, double amount, String type, String status, String currency) {
     }
 
     //Door2
-    public bankAccount(String ownerName, double amount, String type, String status, String currency) {
+    public BankAccount(String ownerName, double amount, String type, String status, String currency) {
         this.ownerName = ownerName;
         this.amount = amount;
         this.type = type;
@@ -21,8 +22,16 @@ public class bankAccount {
         this.currency = currency;
     } //Door 2
 
+    public BankAccount(String status, String type) {
+        this.status=status;
+        this.type=type;
+    }
+    public BankAccount(String status) {
+        this.status=status;
+    }
 
-//    public bankAccount(int id, String ownerName, double amount, String type, String status, String currency) {
+
+//    public model.bankAccount(int id, String ownerName, double amount, String type, String status, String currency) {
 //        this.id = id;
 //        this.ownerName = ownerName;
 //        this.amount = amount;
